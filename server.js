@@ -2,8 +2,8 @@ const express = require('express');
 const connectDB = require('./config/db');
 const Book = require('./models/Books');
 
-
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 connectDB();
 
